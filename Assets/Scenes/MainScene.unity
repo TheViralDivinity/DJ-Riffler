@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd5fed03d67a554d91fe73797afca66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _beatTempo: 0
+  _beatTempo: 115
   _hasStarted: 0
 --- !u!1 &66748167
 GameObject:
@@ -752,6 +752,10 @@ PrefabInstance:
       propertyPath: keyToPress
       value: 102
       objectReference: {fileID: 0}
+    - target: {fileID: 3571811187002265494, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
+      propertyPath: _keyToPress
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 6442708818881896567, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_Name
       value: Down Arrow
@@ -762,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -992,6 +996,10 @@ PrefabInstance:
       propertyPath: keyToPress
       value: 104
       objectReference: {fileID: 0}
+    - target: {fileID: 3571811187002265494, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
+      propertyPath: _keyToPress
+      value: 104
+      objectReference: {fileID: 0}
     - target: {fileID: 6442708818881896567, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_Name
       value: Right Arrow
@@ -1002,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1088,6 +1096,10 @@ PrefabInstance:
       propertyPath: keyToPress
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3571811187002265494, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
+      propertyPath: _keyToPress
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6442708818881896567, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_Name
       value: Left Arrow
@@ -1098,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1600,6 +1612,10 @@ PrefabInstance:
       propertyPath: keyToPress
       value: 103
       objectReference: {fileID: 0}
+    - target: {fileID: 3571811187002265494, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
+      propertyPath: _keyToPress
+      value: 103
+      objectReference: {fileID: 0}
     - target: {fileID: 6442708818881896567, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_Name
       value: Up Arrow
@@ -1610,7 +1626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
