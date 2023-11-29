@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
-    public bool canBePressed;
+    public bool _canBePressed;
 
-    public KeyCode keyToPress;
+    public KeyCode _keyToPress;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,9 @@ public class NoteObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(_keyToPress))
         {
-            if(canBePressed)
+            if(_canBePressed)
             {
                 gameObject.SetActive(false);
             }
@@ -28,17 +28,17 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     { 
-        if (other.tag == "Activator")
+        if (other.CompareTag("Activator"))
         {
-            canBePressed = true;
+            _canBePressed = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Activator")
+        if(other.CompareTag("Activator"))
         {
-            canBePressed = false;
+            _canBePressed = false;
         }
     }
 
