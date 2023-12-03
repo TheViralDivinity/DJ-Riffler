@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20985522}
-  - component: {fileID: 20985523}
   m_Layer: 0
   m_Name: Chart
   m_TagString: Untagged
@@ -159,20 +158,6 @@ Transform:
   - {fileID: 1536524295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20985523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20985521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd5fed03d67a554d91fe73797afca66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _beatTempo: 115
-  _hasStarted: 0
 --- !u!1 &66748167
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75
+      value: 34.56
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1110,7 +1095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.25
+      value: 29.1
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1182,7 +1167,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 629be24377c468f49bc98f478b2bcb5c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3fb8b61c852a1ed4b954c5518d4036ab, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1280,9 +1265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55152a84f9f38545acb638ec3d2befe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _theMusic: {fileID: 1965491079}
-  _startPlaying: 0
-  _beatScroller: {fileID: 20985523}
+  _hasStarted: 0
+  _musicSource: {fileID: 0}
+  _chart: {fileID: 20985521}
 --- !u!4 &1703979681
 Transform:
   m_ObjectHideFlags: 0
@@ -1626,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7889761645902864828, guid: de8c9c779b903a148b9c473e120db4df, type: 3}
       propertyPath: m_LocalPosition.z

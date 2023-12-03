@@ -4,31 +4,55 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource _theMusic;
+    //Toggle variable for level running (Y/NA)
+    public bool _hasStarted;
 
-    public bool _startPlaying;
+    //an AudioSource attached to this GameObject that will play the music
+    public AudioSource _musicSource;
 
     public BeatScroller _beatScroller;
 
+    public GameObject _chart;
+
+    //?
     public static GameManager instance;
     // Start is called before the first frame update
     void Start()
     {
+        //?
         instance = this;
+
+        //Load the AudioSource attached to the Conductor GameObject
+        _musicSource = GetComponent<AudioSource>();
+
+        //Load BeatScroller as an object of GameManager
+        this._beatScroller = new BeatScroller(_chart);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!_startPlaying)
+        if (!_hasStarted)
         {
             if(Input.anyKeyDown)
             {
-                _startPlaying = true;
-                _beatScroller._hasStarted = true;
+                //Song start
+                _hasStarted = true;
+                _beatScroller._isPlaying = true;
 
-                _theMusic.Play();
+                //Record the time when the music starts
+                _beatScroller._dspSongTime = (float)AudioSettings.dspTime;
+
+                Debug.Log(_beatScroller._dspSongTime);
+                //Start the music
+                _musicSource.Play();
+
+                return;
             }
+        }
+        else
+        {
+            _beatScroller.Update();
         }
         
     }
