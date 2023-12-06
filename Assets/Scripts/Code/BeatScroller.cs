@@ -47,7 +47,7 @@ public class BeatScroller : object
         _secPerBeat = 60f / _songBpm;
 
         //Get BPM In proper per minute format for scroll speed
-        _scrollSpeed = _songBpm / 6000f;
+        _scrollSpeed = _songBpm / 12000f;
 
         this._chart = _chart;
 
